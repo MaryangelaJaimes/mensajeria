@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap");
+
 .main-container {
   display: flex;
   height: 100vh;
+  font-family: "Open Sans", sans-serif;
 }
 
 .sidebar {
-  width: 30%;
+  width: 20%;
+  padding: 1rem 2rem;
 }
 
 .chat-container {
@@ -13,10 +17,60 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #f7f7f7;
 }
 
+.linea {
+  font-size: 12px;
+  color: #bec1bb;
+}
+.text {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #444749;
+  margin: 0;
+}
+
+.bold {
+  font-family: "Roboto", sans-serif;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.iconos :first-child {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.iconos-1 {
+  font-size: 25px;
+}
 .conversation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   border-top: 1px solid rgb(213, 211, 211);
+  padding: 20px;
+}
+.new-conversation {
+  padding: 1em;
+  text-align: center;
+}
+.button {
+  font-size: 16px;
+  padding: 20px 80px;
+  background-color: #a491d2;
+  border: none;
+  color: #fff;
 }
 
 .rounded {

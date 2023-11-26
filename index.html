@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Mensajeria</title>
 </head>
@@ -12,60 +15,84 @@
     <div class="main-container">
         <div class="sidebar">
             <div class="profile">
-                <img src="./assets/img/maria.jpg" class="rounded" width="13%" alt="">
-                <p>Maria</p>
-                <span>Activa ahora</span>
-            </div>
-            <div class="new conversation">
-                <p>Nuevo Chat</p>
+                <div class="profile-info">
+                    <img src="./assets/img/maria.jpg" class="rounded" width="50" height="50" alt="">
+                    <div class="profile-name">
+                        <p class="text">Maria</p>
+                        <span class="linea"> Activa ahora</span>
+                    </div>
+                </div>
+                <div class="iconos">
+                    <i class="fa-regular fa-message" style="color: #bec1bb;"></i>
+                    <i class="fa-solid fa-bars iconos-1" style="color: #bec1bb;"></i>
+                </div>
 
             </div>
-            <div class="conversation">
-                <img src="./assets/img/img1.jpg" class="rounded" width="20%" alt="Juanita">
-                <p>Juanita</p>
-                <span>what am I doing</span>
+            <div class="new-conversation">
+                <button class="button">Nuevo Chat</button>
             </div>
             <div class="conversation">
-                <img src="./assets/img/img2.jpg" class="rounded" width="20%" alt="">
-                <p>Alberto</p>
-                <span>what am I doing</span>
+                <img src="./assets/img/img1.jpg" class="rounded" width="60" alt="Juanita">
+                <div class="conversation-info">
+                    <p class="text">Juanita</p>
+                    <span>how are you?</span>
+                </div>
             </div>
             <div class="conversation">
-                <img src="./assets/img/img3.jpg" class="rounded" width="20%" alt="">
-                <p>Ignacio</p>
-                <span>what am I doing</span>
+                <img src="./assets/img/img2.jpg" class="rounded" width="60" alt="">
+                <div class="conversation-info">
+                    <p class="text">Alberto</p>
+                    <span>what am I doing?</span>
+                </div>
             </div>
             <div class="conversation">
-                <img src="./assets/img/img4.jpg" class="rounded" width="20%" alt="">
-                <p>Cristian</p>
-                <span>what am I doing</span>
+                <img src="./assets/img/img3.jpg" class="rounded" width="60" alt="">
+                <div class="conversation-info">
+                    <p class="text">Ignacio</p>
+                    <span>do you want to hang out?</span>
+                </div>
             </div>
             <div class="conversation">
-                <img src="./assets/img/img5.jpg" class="rounded" width="20%" alt="">
-                <p>Maria Jose</p>
-                <span>what am I doing</span>
+                <img src="./assets/img/img4.jpg" class="rounded" width="60" alt="">
+                <div class="conversation-info">
+                    <p class="text">Cristian</p>
+                    <span>vam anar a la muntanya</span>
+                </div>
             </div>
             <div class="conversation">
-                <img src="./assets/img/img6.jpg" class="rounded" width="20%" alt="">
-                <p>Gonzalo</p>
-                <span>what am I doing</span>
+                <img src="./assets/img/img5.jpg" class="rounded" width="60" alt="">
+                <div class="conversation-info">
+                    <p class="text">Maria Jose</p>
+                    <span>do you want to hang out?</span>
+                </div>
             </div>
             <div class="conversation">
-                <img src="./assets/img/img7.jpg" class="rounded" width="20%" alt="">
-                <p>Juan Pablo</p>
-                <span>what am I doing</span>
+                <img src="./assets/img/img6.jpg" class="rounded" width="60" alt="">
+                <div class="conversation-info">
+                    <p class="text">Gonzalo</p>
+                    <span class="text-chat">facciamo un viaggio?</span>
+                </div>
             </div>
             <div class="conversation">
-                <img src="./assets/img/img8.jpg" class="rounded" width="20%" alt="">
-                <p>Magdalena</p>
-                <span>what am I doing</span>
+                <img src="./assets/img/img7.jpg" class="rounded" width="60" alt="">
+                <div class="conversation-info">
+                    <p class="text">Juan Pablo</p>
+                    <span>what am I doing</span>
+                </div>
+            </div>
+            <div class="conversation">
+                <img src="./assets/img/img8.jpg" class="rounded" width="60" alt="">
+                <div class="conversation-info">
+                    <p class="text">Magdalena</p>
+                    <span>facciamo un viaggio?</span>
+                </div>
             </div>
         </div>
         <div class="chat-container">
-            <img src="./assets/img/hand.png" width="40%" alt="">
-            <h1>Comienza el Nertworking</h1>
-            <p>Presiona el boton <strong>"Nuevo chat"</strong> para comenzar a crear nuevas rdes de contacto para tu
-                empresa o emprendimiento</p>
+            <img src="./assets/img/hand.png" width="25%" alt="">
+            <h1 class="bold">Comienza el Nertworking</h1>
+            <p>Presiona el boton <strong>"Nuevo chat"</strong> para comenzar a crear nuevas <br> redes de contacto
+                para tu empresa o emprendimiento.</p>
 
         </div>
     </div>
