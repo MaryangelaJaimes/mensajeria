@@ -65,11 +65,10 @@
 .parrafo {
   font-size: 20px;
   margin-top: 12px;
+  text-align: center;
+  max-width: 700px;
 }
 
-.parrafo-1 {
-  font-size: 20px;
-}
 .profile {
   display: flex;
   justify-content: space-between;
@@ -79,6 +78,7 @@
 
 .profile-info {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -89,8 +89,8 @@
 
 .iconos-1 {
   font-size: 25px;
-  margin-right: 3rem;
 }
+
 .conversation {
   display: flex;
   align-items: center;
@@ -100,13 +100,17 @@
 }
 
 .new-conversation {
+  display: flex;
+  min-height: 125px;
+  justify-content: center;
+  align-items: center;
   border-top: 2px solid rgb(213, 211, 211);
-  padding: 2rem;
-  text-align: center;
 }
+
 .button {
   font-size: 16px;
-  padding: 20px 80px;
+  padding: 20px;
+  min-width: 60%;
   background-color: #a491d2;
   border: none;
   color: #fff;
@@ -143,9 +147,6 @@
   .parrafo {
     font-size: 16px;
   }
-  .parrafo-1 {
-    font-size: 12px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -161,9 +162,6 @@
   }
   .parrafo {
     font-size: 14px;
-  }
-  .parrafo-1 {
-    font-size: 10px;
   }
 }
 
