@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .main-container {
   display: flex;
   height: 100vh;
@@ -7,12 +13,32 @@
 }
 
 .sidebar {
-  width: 20%;
-  padding: 1rem 2rem;
+  width: 30%;
+  padding: 1rem;
+  overflow-y: scroll;
+}
+
+/* scrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px #999;
 }
 
 .chat-container {
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,13 +58,23 @@
 }
 
 .bold {
-  font-family: "Roboto", sans-serif;
+  font-size: 55px;
+  margin-top: 2rem;
 }
 
+.parrafo {
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.parrafo-1 {
+  font-size: 20px;
+}
 .profile {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 14px;
 }
 
 .profile-info {
@@ -48,21 +84,24 @@
 
 .iconos :first-child {
   font-size: 25px;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 .iconos-1 {
   font-size: 25px;
+  margin-right: 3rem;
 }
 .conversation {
   display: flex;
   align-items: center;
   gap: 1rem;
-  border-top: 1px solid rgb(213, 211, 211);
-  padding: 20px;
+  border-top: 2px solid rgb(213, 211, 211);
+  padding: 1rem;
 }
+
 .new-conversation {
-  padding: 1em;
+  border-top: 2px solid rgb(213, 211, 211);
+  padding: 2rem;
   text-align: center;
 }
 .button {
@@ -77,30 +116,54 @@
   border-radius: 50%;
 }
 
+.intro-img {
+  width: 350px;
+}
+
 @media screen and (max-width: 1200px) {
   .sidebar {
-    width: 70%;
+    width: 40%;
   }
-  .chat-container {
-    width: 30%;
+  .intro-img {
+    width: 200px;
   }
 }
 
 @media screen and (max-width: 992px) {
   .sidebar {
-    width: 40%;
+    width: 50%;
   }
-  .chat-container {
-    width: 60%;
+  .intro-img {
+    width: 150px;
+  }
+  .bold {
+    font-size: 30px;
+    text-align: center;
+  }
+  .parrafo {
+    font-size: 16px;
+  }
+  .parrafo-1 {
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .sidebar {
-    width: 50%;
+    width: 60%;
   }
-  .chat-container {
-    width: 50%;
+  .intro-img {
+    width: 100px;
+  }
+  .bold {
+    font-size: 20px;
+    text-align: center;
+  }
+  .parrafo {
+    font-size: 14px;
+  }
+  .parrafo-1 {
+    font-size: 10px;
   }
 }
 
